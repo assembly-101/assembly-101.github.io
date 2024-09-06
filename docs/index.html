@@ -4,360 +4,489 @@
 <html>
 
 <style type="text/css">
-body {
-	font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-weight: 300;
-	font-size: 17px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 980px;
-}
-h1 {
-	font-weight:300;
-	line-height: 1.15em;
-}
+	body {
+		font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight: 300;
+		font-size: 17px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 980px;
+	}
 
-h2 {
-	font-size: 1.75em;
-}
-a:link,a:visited {
-	color: #1367a7;
-	text-decoration: none;
-}
-a:hover {
-	color: #208799;
-}
-h1, h2, h3 {
-	text-align: center;
-}
-h1 {
-	font-size: 40px;
-	font-weight: 500;
-}
-h2, h3 {
-	font-weight: 400;
-	margin: 16px 0px 4px 0px;
-}
-.paper-title {
-	padding: 16px 0px 16px 0px;
-}
-section {
-	margin: 32px 0px 32px 0px;
-	text-align: justify;
-	clear: both;
-}
-.col-5 {
-	 width: 20%;
-	 float: left;
-}
-.col-4 {
-	 width: 25%;
-	 float: left;
-}
+	h1 {
+		font-weight: 300;
+		line-height: 1.15em;
+	}
 
-.col-3a {
-	 width: 33.3%;
-	 float: left;
-	 text-align: right;
-}
+	h2 {
+		font-size: 1.75em;
+	}
 
-.col-3b {
-	 width: 33.3%;
-	 float: left;
-	 text-align: center;
-}
+	a:link,
+	a:visited {
+		color: #1367a7;
+		text-decoration: none;
+	}
 
-.col-3c {
-	 width: 33.3%;
-	 float: left;
-	 text-align: left;
-}
+	a:hover {
+		color: #208799;
+	}
 
-.col-2 {
-	 width: 50%;
-	 float: left;
-}
-.row, .author-row, .affil-row {
-	 overflow: auto;
-}
-.author-row, .affil-row {
-	font-size: 20px;
-}
-.row {
-	margin: 16px 0px 16px 0px;
-}
-.authors {
-	font-size: 18px;
-}
-.affil-row {
-	margin-top: 16px;
-}
-.teaser {
-	max-width: 100%;
-}
-.text-center {
-	text-align: center;
-}
-.screenshot {
-	width: 256px;
-	border: 1px solid #ddd;
-}
-.screenshot-el {
-	margin-bottom: 16px;
-}
-hr {
-	height: 1px;
-	border: 0;
-	border-top: 1px solid #ddd;
-	margin: 0;
-}
-.material-icons {
-	vertical-align: -6px;
-}
-p {
-	line-height: 1.25em;
-}
-.caption_justify {
-	font-size: 16px;
-	color: #666;
-	text-align: justify;
-	margin-top: 0px;
-	margin-bottom: 64px;
-}
-.caption {
-	font-size: 16px;
-	color: #666;
-	text-align: center;
-	margin-top: 8px;
-	margin-bottom: 64px;
-}
-.caption_inline {
-	font-size: 16px;
-	color: #666;
-	text-align: center;
-	margin-top: 8px;
-	margin-bottom: 0px;
-}
-.caption_bold {
-	font-size: 16px;
-	color: #666;
-	text-align: center;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	font-weight: bold;
-}
-video {
-	display: block;
-	margin: auto;
-}
-figure {
-	display: block;
-	margin: auto;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-#bibtex pre {
-	font-size: 14px;
-	background-color: #eee;
-	padding: 16px;
-}
-.blue {
-	color: #2c82c9;
-	font-weight: bold;
-}
-.orange {
-	color: #d35400;
-	font-weight: bold;
-}
-.flex-row {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-.paper-btn {
-  position: relative;
-  text-align: center;
+	h1,
+	h2,
+	h3 {
+		text-align: center;
+	}
 
-  display: inline-block;
-  margin: 8px;
-  padding: 8px 8px;
+	h1 {
+		font-size: 40px;
+		font-weight: 500;
+	}
 
-  border-width: 0;
-  outline: none;
-  border-radius: 2px;
+	h2,
+	h3 {
+		font-weight: 400;
+		margin: 16px 0px 4px 0px;
+	}
 
-  background-color: #1367a7;
-  color: #ecf0f1 !important;
-  font-size: 20px;
-  width: 100px;
-  font-weight: 600;
-}
-.paper-btn-parent {
-	display: flex;
-	justify-content: center;
-	margin: 16px 0px;
-}
-.paper-btn:hover {
-	opacity: 0.85;
-}
-.container {
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 16px;
-	padding-right: 16px;
-}
+	.paper-title {
+		padding: 16px 0px 16px 0px;
+	}
 
+	section {
+		margin: 32px 0px 32px 0px;
+		text-align: justify;
+		clear: both;
+	}
+
+	.col-5 {
+		width: 20%;
+		float: left;
+	}
+
+	.col-4 {
+		width: 25%;
+		float: left;
+	}
+
+	.col-3a {
+		width: 33.3%;
+		float: left;
+		text-align: right;
+	}
+
+	.col-3b {
+		width: 33.3%;
+		float: left;
+		text-align: center;
+	}
+
+	.col-3c {
+		width: 33.3%;
+		float: left;
+		text-align: left;
+	}
+
+	.col-2 {
+		width: 50%;
+		float: left;
+	}
+
+	.row,
+	.author-row,
+	.affil-row {
+		overflow: auto;
+	}
+
+	.author-row,
+	.affil-row {
+		font-size: 20px;
+	}
+
+	.row {
+		margin: 16px 0px 16px 0px;
+	}
+
+	.authors {
+		font-size: 18px;
+	}
+
+	.affil-row {
+		margin-top: 16px;
+	}
+
+	.teaser {
+		max-width: 100%;
+	}
+
+	.text-center {
+		text-align: center;
+	}
+
+	.screenshot {
+		width: 256px;
+		border: 1px solid #ddd;
+	}
+
+	.screenshot-el {
+		margin-bottom: 16px;
+	}
+
+	hr {
+		height: 1px;
+		border: 0;
+		border-top: 1px solid #ddd;
+		margin: 0;
+	}
+
+	.material-icons {
+		vertical-align: -6px;
+	}
+
+	.material-symbols-outlined {
+		vertical-align: -6px;
+		font-variation-settings:
+			'FILL' 1,
+			'wght' 400,
+			'GRAD' 0,
+			'opsz' 24
+	}
+
+	p {
+		line-height: 1.25em;
+	}
+
+	.caption_justify {
+		font-size: 16px;
+		color: #666;
+		text-align: justify;
+		margin-top: 0px;
+		margin-bottom: 64px;
+	}
+
+	.caption {
+		font-size: 16px;
+		color: #666;
+		text-align: center;
+		margin-top: 8px;
+		margin-bottom: 64px;
+	}
+
+	.caption_inline {
+		font-size: 16px;
+		color: #666;
+		text-align: center;
+		margin-top: 8px;
+		margin-bottom: 0px;
+	}
+
+	.caption_bold {
+		font-size: 16px;
+		color: #666;
+		text-align: center;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		font-weight: bold;
+	}
+
+	video {
+		display: block;
+		margin: auto;
+	}
+
+	figure {
+		display: block;
+		margin: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	#bibtex pre {
+		font-size: 14px;
+		background-color: #eee;
+		padding: 16px;
+	}
+
+	.blue {
+		color: #2c82c9;
+		font-weight: bold;
+	}
+
+	.orange {
+		color: #d35400;
+		font-weight: bold;
+	}
+
+	.flex-row {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	.paper-btn {
+		position: relative;
+		text-align: center;
+
+		display: inline-block;
+		margin: 8px;
+		padding: 8px 8px;
+
+		border-width: 0;
+		outline: none;
+		border-radius: 2px;
+
+		background-color: #1367a7;
+		color: #ecf0f1 !important;
+		font-size: 20px;
+		width: 100px;
+		font-weight: 600;
+	}
+
+	.paper-btn-parent {
+		display: flex;
+		justify-content: center;
+		margin: 16px 0px;
+	}
+
+	.paper-btn:hover {
+		opacity: 0.85;
+	}
+
+	.container {
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
 </style>
-<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic'
+	rel='stylesheet' type='text/css'>
+
 <head>
 	<title>Assembly101: A Large-Scale Multi-View Video Dataset for Understanding Procedural Activities</title>
-	<meta property="og:description" content="Assembly101: A Large-Scale Multi-View Video Dataset for Understanding Procedural Activities"/>
+	<meta property="og:description"
+		content="Assembly101: A Large-Scale Multi-View Video Dataset for Understanding Procedural Activities" />
 	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 
 <body>
-<div class="container">
-	<div class="paper-title">
-		<h1>Assembly101: A Large-Scale Multi-View Video Dataset for Understanding Procedural Activities</h1>
-	</div>
-
-	<div id="authors">
-		<div class="author-row">
-			<div class="col-4 text-center"><a href="https://scholar.google.com/citations?user=-juoweoAAAAJ">Fadime Sener<sup>1</sup></a></div>
-			<div class="col-4 text-center"><a href="https://dibschat.github.io/">Dibyadip Chatterjee<sup>2</sup></a></div>
-			<div class="col-4 text-center"><a href="">Daniel Shelepov<sup>1</sup></a></div>
-			<div class="col-4 text-center"><a href="https://scholar.google.com/citations?user=eLFhiSYAAAAJ&hl=en">Kun He<sup>1</sup></a></div>
-			<div class="col-3a"><a href="https://scholar.google.com/citations?user=Kn8A7SYAAAAJ&hl=en">Dipika Singhania<sup>2</sup></a></div>
-			<div class="col-3b"><a href="https://scholar.google.com/citations?user=fBzfSdwAAAAJ&hl=en">Robert Wang<sup>1</sup></a></div>
-			<div class="col-3c"><a href="https://www.comp.nus.edu.sg/~ayao/">Angela Yao<sup>2</sup></a></div>
+	<div class="container">
+		<div class="paper-title">
+			<h1>Assembly101: A Large-Scale Multi-View Video Dataset for Understanding Procedural Activities</h1>
 		</div>
 
-		<div class="affil-row">
-			<div class="col-1 text-center"><sup>1</sup>Reality Labs at Meta</div>
-			<div class="col-1 text-center"><sup>2</sup>National University of Singapore</div>
-		</div>
+		<div id="authors">
+			<div class="author-row">
+				<div class="col-4 text-center"><a href="https://scholar.google.com/citations?user=-juoweoAAAAJ">Fadime
+						Sener<sup>1</sup></a></div>
+				<div class="col-4 text-center"><a href="https://dibschat.github.io/">Dibyadip Chatterjee<sup>2</sup></a>
+				</div>
+				<div class="col-4 text-center"><a href="">Daniel Shelepov<sup>1</sup></a></div>
+				<div class="col-4 text-center"><a
+						href="https://scholar.google.com/citations?user=eLFhiSYAAAAJ&hl=en">Kun He<sup>1</sup></a></div>
+				<div class="col-3a"><a href="https://scholar.google.com/citations?user=Kn8A7SYAAAAJ&hl=en">Dipika
+						Singhania<sup>2</sup></a></div>
+				<div class="col-3b"><a href="https://scholar.google.com/citations?user=fBzfSdwAAAAJ&hl=en">Robert
+						Wang<sup>1</sup></a></div>
+				<div class="col-3c"><a href="https://www.comp.nus.edu.sg/~ayao/">Angela Yao<sup>2</sup></a></div>
+			</div>
 
-		<div class="affil-row">
-			<div class="text-center"><strong style="color: darkblue;">CVPR 2022</strong></div>
-		</div>
+			<div class="affil-row">
+				<div class="col-1 text-center"><sup>1</sup>Meta Reality Labs</div>
+				<div class="col-1 text-center"><sup>2</sup>National University of Singapore</div>
+			</div>
 
-		<div style="clear: both">
-			<div class="paper-btn-parent">
-				<a class="paper-btn" href="https://openaccess.thecvf.com/content/CVPR2022/papers/Sener_Assembly101_A_Large-Scale_Multi-View_Video_Dataset_for_Understanding_Procedural_Activities_CVPR_2022_paper.pdf">
-					<span class="material-icons"> description </span>
-					Paper
-				</a>
-				<a class="paper-btn" href="https://github.com/assembly-101/assembly101-download-scripts">
-					<span class="material-icons"> file_download </span>
-					Dataset
-				</a>
-				<a class="paper-btn" href="https://github.com/assembly-101?tab=repositories">
-					<span class="material-icons"> code </span>
-					Code
-				</a>
-				<a class="paper-btn" href="https://drive.google.com/drive/folders/1NA8U9Ls5RsafuUJ7HtMpd5cLJlIKrrxO?usp=sharing">
-					<span class="material-icons"> videocam </span>
-					Sample
-				</a>
-				<a class="paper-btn" href="https://codalab.lisn.upsaclay.fr/competitions/5256" style="width: 20%; background-color: #c9270e;">
-					<span class="material-icons"> leaderboard </span>
-					Codalab Challenge
-				</a>
+			<div class="affil-row">
+				<div class="text-center"><strong style="color: darkblue;">CVPR 2022</strong></div>
+			</div>
+
+			<div style="clear: both">
+				<div class="paper-btn-parent">
+					<a class="paper-btn"
+						href="https://openaccess.thecvf.com/content/CVPR2022/papers/Sener_Assembly101_A_Large-Scale_Multi-View_Video_Dataset_for_Understanding_Procedural_Activities_CVPR_2022_paper.pdf">
+						<span class="material-symbols-outlined"> description </span>
+						Paper
+					</a>
+					<a class="paper-btn" href="https://github.com/assembly-101/assembly101-download-scripts">
+						<span class="material-symbols-outlined"> file_download </span>
+						Dataset
+					</a>
+					<a class="paper-btn" href="https://github.com/assembly-101?tab=repositories">
+						<span class="material-symbols-outlined"> code </span>
+						Code
+					</a>
+					<a class="paper-btn"
+						href="https://drive.google.com/drive/folders/1NA8U9Ls5RsafuUJ7HtMpd5cLJlIKrrxO?usp=sharing">
+						<span class="material-symbols-outlined"> videocam </span>
+						Sample
+					</a>
+					<a class="paper-btn" href="https://codalab.lisn.upsaclay.fr/competitions/5256"
+						style="width: 20%; background-color: #c9270e;">
+						<span class="material-symbols-outlined"> leaderboard </span>
+						Codalab Challenge
+					</a>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<section id="teaser-videos">
+		<section id="teaser-videos">
 
-		<figure style="width: 100%; float: left">
-			<video class="centered" width="100%" autoplay muted loop playsinline>
-				<source src="assets/12_view_assembly.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</figure>
+			<figure style="width: 100%; float: left">
+				<video class="centered" width="100%" autoplay muted loop playsinline>
+					<source src="assets/12_view_assembly.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</figure>
 
-		<figure style="width: 100%; float: left">
-			<p class="caption_justify">
-				Assembly101 is a large-scale video dataset for action recognition and markerless motion capture of hand-object interactions, captured in the above cage setting.
-				The recordings, which are multi-view captures, feature participants assembling 101 children's toys.
+			<figure style="width: 100%; float: left">
+				<p class="caption_justify">
+					Assembly101 is a large-scale video dataset for action recognition and markerless motion capture of
+					hand-object interactions, captured in the above cage setting.
+					The recordings, which are multi-view captures, feature participants assembling 101 children's toys.
+				</p>
+			</figure>
+		</section>
+
+		<section id="news">
+			<h2>News</h2>
+			<hr>
+			<div class="row">
+				<div><span class="material-symbols-outlined"> trophy </span> [June 2024] Assembly101 has been awarded
+					the <a href="https://egovis.github.io/awards/2022_2023/">EgoVis 2022/2023 Distinguished Paper
+						Award</a>.
+					<div><span class="material-symbols-outlined"> integration_instructions </span> [Aug 2023] Mistake
+						detection annotations are now available on <a
+							href="https://github.com/assembly-101/assembly101-mistake-detection">github</a>.
+						<div><span class="material-symbols-outlined"> integration_instructions </span> [April 28th 2023]
+							Camera extrinsics can now be found in <a
+								href="https://drive.google.com/file/d/1fyHrPMDOTa3BnaJAvl34ssaaiNQLIM_C/view?usp=drive_link">AssemblyPoses.zip</a>.
+							<div><span class="material-symbols-outlined"> integration_instructions </span> [Feb 20th
+								2023] Code and models for the Temporal Action Segmentation benchmark is now available on
+								<a
+									href="https://github.com/assembly-101/assembly101-temporal-action-segmentation">github</a>.
+								<div><span class="material-symbols-outlined"> integration_instructions </span> [Jan 17th
+									2023] Code and models for the Action Anticipation benchmark is now available on <a
+										href="https://github.com/assembly-101/assembly101-action-anticipation">github</a>.
+									<div><span class="material-symbols-outlined"> leaderboard </span> [Sept. 1st 2022]
+										We are pleased to announce awards worth up to $2000 for the top three entries in
+										our <a href="https://codalab.lisn.upsaclay.fr/competitions/5256"> 3D Action
+											Recognition Challenge </a> leaderboard.
+										<!--strong style="color: red">[New]</strong-->
+									</div>
+									<div><span class="material-symbols-outlined"> leaderboard </span> [August 8th 2022]
+										<a href="https://codalab.lisn.upsaclay.fr/competitions/5256"> 3D Action
+											Recognition Challenge </a> for Assembly101 is online. Results will be
+										presented at the "<a
+											href="https://sites.google.com/view/egocentric-hand-body-activity">Human
+											Body, Hands, and Activities from Egocentric and Multi-view Cameras</a>"
+										workshop at ECCV 22. <!--strong style="color: red">[New]</strong-->
+									</div>
+									<div><span class="material-symbols-outlined"> integration_instructions </span> [May
+										20th 2022] Code and models for the Action Recognition benchmark is now available
+										on <a
+											href="https://github.com/assembly-101/assembly101-action-recognition">github</a>.
+										<div><span class="material-symbols-outlined"> integration_instructions </span>
+											[May 17th 2022] Annotations for both fine-grained and coarse actions are now
+											available on <a
+												href="https://github.com/assembly-101/assembly101-annotations">github</a>.
+											<div><span class="material-symbols-outlined"> integration_instructions
+												</span> [May 2nd 2022] Scripts to download the videos are now available
+												on <a
+													href="https://github.com/assembly-101/assembly101-download-scripts">github</a>.
+												<div><span class="material-symbols-outlined"> integration_instructions
+													</span> [March 28th 2022] Dataset released on <a
+														href="https://drive.google.com/drive/folders/1nh8PHwEw04zxkkkKlfm4fsR3IPEDvLKj?usp=sharing">Google
+														Drive</a>.</div>
+												<div><span class="material-symbols-outlined"> description </span> [March
+													28th 2022] Paper released on <a
+														href="https://arxiv.org/pdf/2203.14712.pdf">arXiv</a>.</div>
+											</div>
+		</section>
+
+		<section id="abstract">
+			<h2>Abstract</h2>
+			<hr>
+			<p>
+				Assembly101 is a new procedural activity dataset featuring 4321 videos of people assembling and
+				disassembling 101 "take-apart" toy vehicles. Participants work without fixed instructions, and the
+				sequences feature rich and natural variations in action ordering, mistakes, and corrections. Assembly101
+				is the first multi-view action dataset, with simultaneous static (8) and egocentric (4) recordings.
+				Sequences are annotated with more than 100K coarse and 1M fine-grained action segments, and 18M 3D hand
+				poses. We benchmark on three action understanding tasks: recognition, anticipation and temporal
+				segmentation. Additionally, we propose a novel task of detecting mistakes. The unique recording format
+				and rich set of annotations allow us to investigate generalization to new toys, cross-view transfer,
+				long-tailed distributions, and pose vs. appearance. We envision that Assembly101 will serve as a new
+				challenge to investigate various activity understanding problems.
 			</p>
-		</figure>
-	</section>
+		</section>
 
-	<section id="news">
-		<h2>News</h2>
-		<hr>
-		<div class="row">
-			<div><span class="material-icons"> integration_instructions </span> [Aug 1st 2023] <strong style="color: red">[New]</strong> Mistake detection annotations are now available on <a href="https://github.com/assembly-101/assembly101-mistake-detection">github</a>.
-			<div><span class="material-icons"> integration_instructions </span> [April 28th 2023] Camera extrinsics can now be found in <a href="https://drive.google.com/drive/folders/1nh8PHwEw04zxkkkKlfm4fsR3IPEDvLKj">metadata.zip</a>.
-			<div><span class="material-icons"> integration_instructions </span> [Feb 20th 2023] Code and models for the Temporal Action Segmentation benchmark is now available on <a href="https://github.com/assembly-101/assembly101-temporal-action-segmentation">github</a>.
-			<div><span class="material-icons"> integration_instructions </span> [Jan 17th 2023] Code and models for the Action Anticipation benchmark is now available on <a href="https://github.com/assembly-101/assembly101-action-anticipation">github</a>. 
-			<div><span class="material-icons"> leaderboard </span> [Sept. 1st 2022] We are pleased to announce awards worth up to $2000 for the top three entries in our <a href="https://codalab.lisn.upsaclay.fr/competitions/5256"> 3D Action Recognition Challenge </a> leaderboard. <!--strong style="color: red">[New]</strong--></div>
-			<div><span class="material-icons"> leaderboard </span> [August 8th 2022] <a href="https://codalab.lisn.upsaclay.fr/competitions/5256"> 3D Action Recognition Challenge </a> for Assembly101 is online. Results will be presented at the "<a href="https://sites.google.com/view/egocentric-hand-body-activity">Human Body, Hands, and Activities from Egocentric and Multi-view Cameras</a>" workshop at ECCV 22. <!--strong style="color: red">[New]</strong--></div>
-			<div><span class="material-icons"> integration_instructions </span> [May 20th 2022] Code and models for the Action Recognition benchmark is now available on <a href="https://github.com/assembly-101/assembly101-action-recognition">github</a>. 
-			<div><span class="material-icons"> integration_instructions </span> [May 17th 2022] Annotations for both fine-grained and coarse actions are now available on <a href="https://github.com/assembly-101/assembly101-annotations">github</a>. 
-			<div><span class="material-icons"> integration_instructions </span> [May 2nd 2022] Scripts to download the videos are now available on <a href="https://github.com/assembly-101/assembly101-download-scripts">github</a>.
-			<div><span class="material-icons"> integration_instructions </span> [March 28th 2022] Dataset released on <a href="https://drive.google.com/drive/folders/1nh8PHwEw04zxkkkKlfm4fsR3IPEDvLKj?usp=sharing">Google Drive</a>.</div>
-			<div><span class="material-icons"> description </span> [March 28th 2022] Paper released on <a href="https://arxiv.org/pdf/2203.14712.pdf">arXiv</a>.</div>
-		</div>
-	</section>
+		<section id="paper">
+			<h2>Paper</h2>
+			<hr>
+			<div class="flex-row">
+				<div style="box-sizing: border-box; padding: 16px; margin: auto;">
+					<img class="screenshot" src="assets/assembly101_rig.png">
+				</div>
+				<div style="width: 60%">
+					<p><b>Assembly101: A Large-Scale Multi-View Video Dataset for Understanding Procedural
+							Activities</b></p>
+					<p>Fadime Sener, Dibyadip Chatterjee, Daniel Shelepov, Kun He, Dipika Singhania, Robert Wang, Angela
+						Yao</p>
 
-	<section id="abstract">
-		<h2>Abstract</h2>
-		<hr>
-		<p>
-	Assembly101 is a new procedural activity dataset featuring 4321 videos of people assembling and disassembling 101 "take-apart" toy vehicles. Participants work without fixed instructions, and the sequences feature rich and natural variations in action ordering, mistakes, and corrections. Assembly101 is the first multi-view action dataset, with simultaneous static (8) and egocentric (4) recordings. Sequences are annotated with more than 100K coarse and 1M fine-grained action segments, and 18M 3D hand poses. We benchmark on three action understanding tasks: recognition, anticipation and temporal segmentation. Additionally, we propose a novel task of detecting mistakes. The unique recording format and rich set of annotations allow us to investigate generalization to new toys, cross-view transfer, long-tailed distributions, and pose vs. appearance. We envision that Assembly101 will serve as a new challenge to investigate various activity understanding problems.
-		</p>
-	</section>
+					<div><span class="material-symbols-outlined"> description </span><a
+							href="https://openaccess.thecvf.com/content/CVPR2022/papers/Sener_Assembly101_A_Large-Scale_Multi-View_Video_Dataset_for_Understanding_Procedural_Activities_CVPR_2022_paper.pdf">
+							CVPR Proceedings </a></div>
+					<div><span class="material-symbols-outlined"> description </span><a
+							href="https://openaccess.thecvf.com/content/CVPR2022/supplemental/Sener_Assembly101_A_Large-Scale_CVPR_2022_supplemental.pdf">
+							Supplementary </a></div>
+					<div><span class="material-symbols-outlined"> description </span><a
+							href="https://arxiv.org/pdf/2203.14712.pdf"> arXiv version</a></div>
+					<div><span class="material-symbols-outlined"> integration_instructions </span><a
+							href="https://github.com/assembly-101?tab=repositories"> Code</a></div>
+					<!--				<div><span class="material-symbols-outlined"> videocam </span><a href="https://youtu.be/asdf"> Video</a></div>-->
 
-	<section id="paper">
-		<h2>Paper</h2>
-		<hr>
-		<div class="flex-row">
-			<div style="box-sizing: border-box; padding: 16px; margin: auto;">
-				<img class="screenshot" src="assets/assembly101_rig.png">
+					<p>Please send feedback and questions to <tt>3dassembly101&lt;at&gt;gmail.com</tt></p>
+				</div>
 			</div>
-			<div style="width: 60%">
-				<p><b>Assembly101: A Large-Scale Multi-View Video Dataset for Understanding Procedural Activities</b></p>
-				<p>Fadime Sener, Dibyadip Chatterjee, Daniel Shelepov, Kun He, Dipika Singhania, Robert Wang, Angela Yao</p>
+		</section>
 
-				<div><span class="material-icons"> description </span><a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Sener_Assembly101_A_Large-Scale_Multi-View_Video_Dataset_for_Understanding_Procedural_Activities_CVPR_2022_paper.pdf"> CVPR Proceedings </a></div>
-				<div><span class="material-icons"> description </span><a href="https://openaccess.thecvf.com/content/CVPR2022/supplemental/Sener_Assembly101_A_Large-Scale_CVPR_2022_supplemental.pdf"> Supplementary </a></div>
-				<div><span class="material-icons"> description </span><a href="https://arxiv.org/pdf/2203.14712.pdf"> arXiv version</a></div>
-				<div><span class="material-icons"> integration_instructions </span><a href="https://github.com/assembly-101?tab=repositories"> Code</a></div>
-<!--				<div><span class="material-icons"> videocam </span><a href="https://youtu.be/asdf"> Video</a></div>-->
+		<section id="license">
+			<h2>License</h2>
+			<hr>
+			<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License"
+					style="border-width:0"
+					src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Assembly101 is licensed by us
+			under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons
+				Attribution-NonCommercial 4.0 International License</a>. The terms of this license are:
+			<p><strong>Attribution</strong> : You must give appropriate credit, provide a link to the license, and
+				indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests
+				the licensor endorses you or your use.</p>
+			<p><strong>NonCommercial</strong> : You may not use the material for commercial purposes.</p>
+		</section>
 
-				<p>Please send feedback and questions to <tt>3dassembly101&lt;at&gt;gmail.com</tt></p>
-			</div>
-		</div>
-	</section>
-	
-	<section id="license">
-		<h2>License</h2>
-		<hr>
-		<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Assembly101 is licensed by us under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>. The terms of this license are:
-		<p><strong>Attribution</strong> : You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</p>
-		<p><strong>NonCommercial</strong> : You may not use the material for commercial purposes.</p>
-	</section>
-	
-	<section id="bibtex">
-		<h2>Citation</h2>
-		<hr>
-		<pre><code>@article{sener2022assembly101,
+		<section id="bibtex">
+			<h2>Citation</h2>
+			<hr>
+			<pre><code>@article{sener2022assembly101,
     title = {Assembly101: A Large-Scale Multi-View Video Dataset for Understanding Procedural Activities},
     author = {F. Sener and D. Chatterjee and D. Shelepov and K. He and D. Singhania and R. Wang and A. Yao},
     journal = {CVPR 2022},
 }
 </code></pre>
-	
-	</section>
-	<section id="acknowledgements">
-	<div class="text-center">We thank <a href="https://joeylitalien.github.io/">Joey Litalien</a> for providing us with the framework for this website.</div>
-	</section>
 
-</div>
+		</section>
+		<section id="acknowledgements">
+			<div class="text-center">We thank <a href="https://joeylitalien.github.io/">Joey Litalien</a> for providing
+				us with the framework for this website.</div>
+		</section>
+
+	</div>
 </body>
+
 </html>
